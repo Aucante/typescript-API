@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install express typescript ts-node @types/express --save
-
-CMD [ "npx", "ts-node", "index.ts" ]
+#RUN npm install express typescript ts-node ts-node-dev @types/express --save
+#
+CMD [ "ts-node-dev", "index.ts" ]

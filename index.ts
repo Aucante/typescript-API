@@ -6,7 +6,7 @@ const app: Express = express();
 app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Welcome to the RESTful API!');
+    res.send('Welcome to !');
 });
 
 app.listen(3000, () => {

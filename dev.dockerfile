@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install -g nodemon
+RUN npm install express typescript ts-node ts-node-dev @types/express --save
 
-CMD [ "npx", "ts-node", "index.ts" ]
+CMD [ "npm", "start" ]
